@@ -49,9 +49,9 @@ class MoMoPAYAPI {
     public function initMTNConfiguration(){
 
         //  Your Sandbox credentials :
-        // Ocp-Apim-Subscription-Key: 14cc98e2d79e481188851609c4849f81
-        // UserId (X-Reference-Id)  : 052a9341-157c-4664-9301-434033ea0174
-        // ApiKey (ApiSecret)       : d833611f44264579bd2b4bba41b7b61a
+        // Ocp-Apim-Subscription-Key: XXXXXXXXXXXXXXXXXXXXXXX
+        // UserId (X-Reference-Id)  : XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // ApiKey (ApiSecret)       : XXXXXXXXXXXXXXXXXX
         // Callback host            : https://tashal.faceduka.biz/pay-workers/
         
         $disburseConfig = new MtnConfig([
@@ -61,9 +61,9 @@ class MoMoPAYAPI {
             'targetEnvironment'     => 'sandbox', 
 
           // disbursement credentials
-            "disbursementApiSecret"   => '1f6b121775514837bd3d1e8b03077c5a', 
-            "disbursementPrimaryKey"  => '8b4e92655695412db34d225979d1545d', 
-            "disbursementUserId"      => '69fe239f-9bb0-4e49-b34f-77dcb0acf6df'
+            "disbursementApiSecret"   => 'XXXXXXXXXXXXXXXXXXXXXXX', 
+            "disbursementPrimaryKey"  => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', 
+            "disbursementUserId"      => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
         ]);
 
         $this->disbursementConfig = new MtnDisbursement($disburseConfig);
@@ -76,9 +76,9 @@ class MoMoPAYAPI {
             'targetEnvironment'     => 'sandbox', 
         
             // disbursement credentials
-            "remittanceApiSecret"   => '16aed11b67314c2186801b4e5c4597e7', 
-            "remittancePrimaryKey"  => '294789795faa4293a41b638ccc975454', 
-            "remittanceUserId"      => 'c1c64f32-6311-4275-a400-47c332a5a22c'
+            "remittanceApiSecret"   => 'XXXXXXXXXXXXXXXXXXXXX', 
+            "remittancePrimaryKey"  => 'XXXXXXXXXXXXXXXXXXXXXXXX', 
+            "remittanceUserId"      => 'XXXXXXXXXXXXXXXXXXXXXXXXX'
         ]);
 
         $this->remittanceConfig  = new MtnRemittance($remitConfig);
