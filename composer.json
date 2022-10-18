@@ -1,0 +1,5 @@
+{
+    "require": {
+        "patricpoba/mtn-momo-api-php": "^0.2.2"
+    }
+}
